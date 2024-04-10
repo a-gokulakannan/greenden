@@ -16,8 +16,8 @@
         <h1 class="text-2xl">Greenden</h1>
 
         <!--Small screen menu bar-->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -34,6 +34,25 @@
         </ul>
     </nav>
 
+    <!--Side Nav bar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nave" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!--Search box-->
     <section class="text-center">
         <h1 class="text-3xl font-bold mt-5 text-center">Our Oroducts</h1>
@@ -41,73 +60,85 @@
         <br>
         <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div>
-                <img src="./images/bestseller_1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_1.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Rose plant</h1>
                 <p>₹30</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_2.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_2.png" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Colour Rose plant</h1>
                 <p>₹100</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_3.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Kuchi plant</h1>
                 <p>₹20</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_4.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_4.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>spade plant</h1>
                 <p>₹50</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_5.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_5.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Gundu plant</h1>
                 <p>₹50</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_6.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_6.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Multi plant</h1>
                 <p>₹200</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_7.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_7.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Long Kuchi plant</h1>
                 <p>₹80</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_8.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_8.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>kind of kathala plant</h1>
                 <p>₹100</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_1.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Rose plant(Premium)</h1>
                 <p>₹500</p>
             </div>
 
             <div>
-                <img src="./images/bestseller_2.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./images/bestseller_2.png" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Colour Rose plant(Premium)</h1>
                 <p>₹500</p>
             </div>
         </div>
     </section>
 
-     <!--Footer-->
-     <section class="bg-green-100 p-10 flex flex-col gap-5">
+    <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
         <h1 class="text-4xl font-bold">Greenden</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, inventore!</p>
         <p>@ 2024 Greenday.com</p>
     </section>
+
+    <script src="./product.js"></script>
 </body>
 
 </html>
